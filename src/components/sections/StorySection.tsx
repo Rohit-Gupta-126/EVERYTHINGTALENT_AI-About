@@ -45,11 +45,10 @@ export default function StorySection() {
               The <span className="gradient-text">Story</span> Behind Us
             </h2>
             <p className="mb-8 text-lg leading-relaxed text-gray-600 dark:text-gray-300">
-              It all started with one question: What if hiring didn't have to
-              feel like gambling on a hunch?
+              It all started with one question: What if hiring didn&apos;t have
+              to feel like gambling on a hunch?
             </p>
 
-            {/* Feature Cards Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
               {features.map((feature, index) => (
                 <div
@@ -72,7 +71,6 @@ export default function StorySection() {
             </div>
           </div>
 
-          {/* Right Column - Image */}
           <div className="lg:w-1/2 relative">
             <div className="relative h-64 sm:h-80 md:h-[500px] w-full transition-transform duration-300 hover:scale-x-[1.015] overflow-hidden rounded-xl md:rounded-2xl">
               <Image

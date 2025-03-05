@@ -4,7 +4,6 @@ import {
   HiOutlineChevronRight,
   HiArrowRight,
 } from "react-icons/hi";
-import { RxDividerVertical } from "react-icons/rx";
 import ThemeToggle from "../components/ThemeToggle";
 import { RainbowButton } from "./ui/RainbowButton";
 

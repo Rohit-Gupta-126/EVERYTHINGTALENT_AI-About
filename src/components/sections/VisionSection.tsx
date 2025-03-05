@@ -60,10 +60,10 @@ export default function VisionSection() {
               </h2>
               <p className="text-xl text-purple-400">Ambition</p>
               <p className="text-gray-400">
-                Hiring doesn't have to be a painful guessing game. We're
-                bridging the gap between recruiters and software engineers
-                through our platform, where talent and opportunity finally meet,
-                creating the perfect match.
+                Hiring doesn&apos;t have to be a painful guessing game.
+                We&apos;re bridging the gap between recruiters and software
+                engineers through our platform, where talent and opportunity
+                finally meet, creating the perfect match.
               </p>
               <ul className="list-none space-y-4 text-gray-300">
                 <li className="flex items-center gap-2">

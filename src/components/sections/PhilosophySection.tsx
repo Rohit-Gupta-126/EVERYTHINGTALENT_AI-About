@@ -56,7 +56,7 @@ export default function PhilosophySection() {
               <div className="mt-auto flex justify-end">
                 <div className="text-xl font-black text-black/60 md:text-2xl">
                   <p>
-                    With us, there are no surprises—just straight talk and
+                    With us, there are no surprises&mdash;just straight talk and
                     genuine commitment.
                   </p>
                   <sup className="text-sm text-yellow-700">#HONESTY</sup>
@@ -127,7 +127,7 @@ export default function PhilosophySection() {
             <div className="relative h-full w-full overflow-hidden rounded-2xl p-4 flex bg-lime-300 sm:col-span-2">
               <div className="text-sm font-medium text-lime-600">05</div>
               <div className="text-xl mt-5 font-black text-lime-800">
-                We’re here to help you aim higher, break limits, and achieve
+                We&rsquo;re here to help you aim higher, break limits, and achieve
                 what others might think impossible.
               </div>
               <sup className="text-sm mt-20 -ml-52 text-lime-600">
@@ -162,7 +162,7 @@ export default function PhilosophySection() {
               <div className="text-sm font-medium text-neutral-800">07</div>
               <div className="mt-2 font-bold text-white">
                 We value fresh ideas, bold solutions, and the freedom to imagine
-                what's next.
+                what&rsquo;s next.
               </div>
               <sup className="text-sm mt-4 text-neutral-800">#CREATIVITY</sup>
             </div>
