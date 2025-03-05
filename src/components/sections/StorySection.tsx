@@ -1,30 +1,28 @@
 import React from "react";
 import Image from "next/image";
-import { FiUsers, FiPocket } from "react-icons/fi";
-import { FaBrain } from "react-icons/fa";
-import { FaGraduationCap } from "react-icons/fa";
+import { Brain, Users, GraduationCap, Rocket } from "lucide-react";
 
 export default function StorySection() {
   const features = [
     {
       title: "AI-Powered",
       description: "Advanced AI/ML algorithms for precise matching",
-      icon: <FaBrain className="mb-3 h-6 w-6 text-purple-400" />,
+      icon: <Brain className="mb-3 h-6 w-6 text-purple-400" />,
     },
     {
       title: "Human-Centric",
       description: "Built by recruiters, for recruiters",
-      icon: <FiUsers className="mb-3 h-6 w-6 text-purple-400" />,
+      icon: <Users className="mb-3 h-6 w-6 text-purple-400" />,
     },
     {
       title: "Skill Assessment",
       description: "Comprehensive skill evaluation system",
-      icon: <FaGraduationCap className="mb-3 h-6 w-6 text-purple-400" />,
+      icon: <GraduationCap className="mb-3 h-6 w-6 text-purple-400" />,
     },
     {
       title: "Future-Ready",
       description: "Constantly evolving with industry needs",
-      icon: <FiPocket className="mb-3 h-6 w-6 text-purple-400" />,
+      icon: <Rocket className="mb-3 h-6 w-6 text-purple-400" />,
     },
   ];
 

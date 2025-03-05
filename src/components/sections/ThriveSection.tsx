@@ -73,8 +73,10 @@ export default function ThriveSection() {
               {principles.map((principle, index) => (
                 <div
                   key={index}
-                  className="rounded-xl border border-border hover:border-none dark:bg-gray-900/50 p-4 backdrop-blur-sm md:p-6 transition-all shadow-xl duration-200 group dark:border-gray-700 hover:gradient-border hover:bg-purple-600 bg-gradient-to-br from-slate-200 via-[#F5F3FC] to-[#e9d5ff00] dark:from-black dark:via-slate-900 dark:to-slate-950 hover:scale-[101%]"
+                  className="rounded-xl border border-white/20 dark:bg-gray-900/50 p-4 backdrop-blur-sm md:p-6 transition-all shadow-xl duration-200 group dark:border-gray-700 bg-gradient-to-br from-slate-200 via-[#F5F3FC] to-[#e9d5ff00] dark:from-black dark:via-slate-900 dark:to-slate-950 hover:scale-[101%]"
                 >
+                  <div className="absolute -inset-[1px] border border-gradient rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-0" />
+
                   {principle.icon}
                   <h3 className="mb-2 font-semibold text-gray-900 dark:text-white">
                     {principle.title}

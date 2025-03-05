@@ -33,7 +33,6 @@ const config: Config = {
   },
   plugins: [
     plugin(({ addBase, theme }) => {
-      // Add color variables
       const allColors = flattenColorPalette(theme("colors"));
       const colorVariables = Object.fromEntries(
         Object.entries(allColors).map(([key, value]) => [`--${key}`, value])
@@ -44,18 +43,21 @@ const config: Config = {
       });
     }),
     plugin(function ({ addUtilities }) {
-      // Add gradient border utilities
       addUtilities({
         ".border-gradient": {
-          borderImage: "linear-gradient(135deg, #8b5cf6 0%, #3b82f6 100%)",
+          borderImage: "linear-gradient(135deg, #3b82f6 10%, #8b5cf6 40%, rgb(216, 142, 4) 100%)",
           borderImageSlice: "1",
-          borderWidth: "2px",
+          borderWidth: "3px",
           borderStyle: "solid",
+          borderRadius: "20px",
         },
         ".border-gradient-to-r": {
           borderImage:
             "linear-gradient(to right, var(--tw-gradient-from), var(--tw-gradient-to))",
           borderImageSlice: "1",
+          borderWidth: "2px",
+          borderStyle: "solid",
+          borderRadius: "20px",
         },
       });
     }),

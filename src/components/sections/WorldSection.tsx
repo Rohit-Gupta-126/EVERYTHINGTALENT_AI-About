@@ -43,8 +43,8 @@ export default function WorldSection() {
       {/* Card Container */}
       <div className="flex justify-center items-center h-screen px-4 relative z-10">
         <div
-          className="border-2 max-w-3xl group rounded-3xl px-6 sm:px-10 md:px-12 py-16 sm:py-20 md:py-24 
-             overflow-hidden w-full mx-auto relative z-10 backdrop-blur-xl bg-transparent dark:bg-transparent"
+          className="border border-gradient max-w-3xl group rounded-3xl px-6 sm:px-10 md:px-12 py-16 sm:py-20 md:py-24 
+             overflow-hidden w-full mx-auto relative bg-black/40 dark:bg-black/20"
         >
           <div className="absolute -top-4 -right-2 w-48 h-48 transition-transform duration-200 group-hover:scale-105 md:w-44 md:h-44 translate-x-1/4 -translate-y-1/4">
             <div className="relative w-full h-full">
@@ -73,17 +73,17 @@ export default function WorldSection() {
               </GradientText>
             </h2>
 
-            <p className="text-lg sm:text-xl md:text-xl text-slate-700 dark:text-gray-300">
+            <p className="text-lg sm:text-xl md:text-xl text-gray-600">
               Help us reimagine the future of hiring in the tech industry.
             </p>
 
-            <RainbowButton className="mt-4">
+            <RainbowButton className="mt-4 opacity-80 hover:scale-[1.015] transition-transform">
               Start Here
               <HiArrowRight className="ml-2 inline-block w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </RainbowButton>
           </div>
 
-          <div className="absolute -inset-[2px] rounded-3xl border border-gradient opacity-20 backdrop-blur-sm -z-10" />
+          <div className="absolute -inset-[2px] rounded-3xl border border-gradient backdrop-blur-xs -z-10" />
         </div>
       </div>
     </section>

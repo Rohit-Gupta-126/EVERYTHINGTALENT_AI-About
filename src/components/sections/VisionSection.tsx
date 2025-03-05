@@ -40,13 +40,13 @@ export default function VisionSection() {
               <span className="relative z-10">Ambition</span>
               <div className="absolute inset-0 bg-white rounded-full shadow-sm" />
             </button>
-            <button className="px-6 py-2 rounded-full text-gray-400 cursor-pointer hover:text-white transition-colors duration-200">
+            <button className="px-6 py-2 rounded-full text-gray-600 cursor-pointer hover:text-white transition-colors duration-200">
               Satisfaction
             </button>
-            <button className="px-6 py-2 rounded-full text-gray-400 cursor-pointer hover:text-white transition-colors duration-200">
+            <button className="px-6 py-2 rounded-full text-gray-600 cursor-pointer hover:text-white transition-colors duration-200">
               Integrity
             </button>
-            <button className="px-6 py-2 rounded-full text-gray-400 cursor-pointer hover:text-white transition-colors duration-200">
+            <button className="px-6 py-2 rounded-full text-gray-600 cursor-pointer hover:text-white transition-colors duration-200">
               Vigilance
             </button>
           </div>
@@ -59,7 +59,7 @@ export default function VisionSection() {
                 Connecting Talent and Opportunity
               </h2>
               <p className="text-xl text-purple-400">Ambition</p>
-              <p className="text-gray-400">
+              <p className="text-gray-600">
                 Hiring doesn&apos;t have to be a painful guessing game.
                 We&apos;re bridging the gap between recruiters and software
                 engineers through our platform, where talent and opportunity

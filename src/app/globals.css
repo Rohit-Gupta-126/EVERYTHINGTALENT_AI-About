@@ -52,14 +52,15 @@ body {
 
 @layer utilities {
   :root {
-    --gradient-border: linear-gradient(135deg, #8b5cf6 0%, #3b82f6 100%);
+    --gradient-border: linear-gradient(135deg, #3b82f6 10%, #8b5cf6 40%, rgb(216, 142, 4) 100%);
   }
 
   .border-gradient {
     border-image: var(--gradient-border);
     border-image-slice: 1;
-    border-width: 2px;
+    border-width: 3px;
     border-style: solid;
+    border-radius: 20px;
   }
 }
 

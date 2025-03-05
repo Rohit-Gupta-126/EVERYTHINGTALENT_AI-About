@@ -139,7 +139,7 @@ export default function PhilosophySection() {
             <div className="relative h-full w-full overflow-hidden rounded-2xl p-4 flex flex-col items-center justify-center bg-zinc-300 sm:col-span-2">
               <div className="text-sm font-medium text-neutral-800">06</div>
               <div className="group relative flex items-center justify-center px-2 py-2 md:px-6 md:py-4 bg-transparent">
-                <div className="text-2xl font-black uppercase text-foreground/05 transition-all group-hover:opacity-50 md:text-4xl">
+                <div className="text-2xl font-black uppercase text-gray-200 transition-all group-hover:opacity-50 md:text-4xl">
                   Do hard things
                 </div>
                 <div className="text-md absolute font-black uppercase transition-all group-hover:text-4xl md:text-3xl group-hover:md:text-4xl text-zinc-800">

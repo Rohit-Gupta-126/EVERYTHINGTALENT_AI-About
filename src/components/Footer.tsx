@@ -11,7 +11,7 @@ export default function Footer() {
       <section className="mx-auto">
         <div className="px-4 md:px-24 md:pt-16 pb-10 flex flex-col gap-[10px] md:gap-[15px]">
           <div className="lg:flex md:gap-48">
-            {/* Centered Logo & Social Section */}
+            {/* Logo & Social Section */}
             <div className="max-w-72 mb-8 md:mb-0 mx-auto text-center lg:text-left lg:mx-0">
               <div className="-ml-1 h-40 w-40 mb-6 relative mx-auto">
                 <Image
@@ -63,9 +63,7 @@ export default function Footer() {
               </div>
             </div>
 
-            {/* Links Grid (Original Positioning) */}
             <div className="grid grid-cols-2 gap-10 sm:gap-28 sm:grid-cols-3 mt-8">
-              {/* Resources */}
               <div>
                 <h2 className="mb-6 text-sm font-semibold uppercase text-white">
                   Resources
@@ -89,7 +87,6 @@ export default function Footer() {
                 </ul>
               </div>
 
-              {/* Get Started */}
               <div>
                 <h2 className="mb-6 text-sm font-semibold uppercase text-white">
                   Get Started
@@ -113,7 +110,6 @@ export default function Footer() {
                 </ul>
               </div>
 
-              {/* Legal */}
               <div>
                 <h2 className="mb-6 text-sm font-semibold uppercase text-white">
                   Legal
@@ -137,7 +133,7 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Background Image Section (Original Positioning) */}
+        {/* Background Image Section */}
         <section className="relative">
           <div className="relative h-[26rem] w-full">
             <Image
@@ -155,7 +151,7 @@ export default function Footer() {
           </div>
         </section>
 
-        {/* Gradient Text Overlay (Original Positioning) */}
+        {/* Gradient Text Overlay */}
         <div className="absolute bottom-70 max-lg:bottom-40 right-20 hidden sm:block">
           <div className="w-[600px] h-[300px] flex items-center justify-center">
             {opacities.map((opacity, idx) => (

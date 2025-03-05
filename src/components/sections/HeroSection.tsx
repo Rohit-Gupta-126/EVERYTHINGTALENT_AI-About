@@ -34,9 +34,9 @@ export default function HeroSection() {
                 </p>
 
                 {/* Gradient Button */}
-                <div className="flex flex-col sm:flex-row gap-4">
+                <div className="flex flex-col sm:flex-row gap-4 ">
                   <a className="md:w-fit" href="#">
-                    <RainbowButton>
+                    <RainbowButton className="hover:scale-[1.015] transition-transform">
                       Start for Free Today
                       <HiArrowRight className="ml-2 inline-block w-5 h-5 group-hover:translate-x-1 transition-transform" />
                     </RainbowButton>

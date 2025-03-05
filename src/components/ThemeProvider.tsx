@@ -26,7 +26,6 @@ export function ThemeProvider({
   attribute = "class",
   enableSystem = false,
 }: ThemeProviderProps) {
-  // Detect system preference if enableSystem is true
   const getSystemTheme = (): Theme => {
     if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
       return "dark";
