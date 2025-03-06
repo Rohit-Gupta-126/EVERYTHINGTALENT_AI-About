@@ -51,7 +51,7 @@ export default function JourneySection() {
           <div className="flex items-center justify-center w-full">
             <div className="dark:bg-[#404040] bg-gray-100 py-1 px-2 rounded-lg">
               <span
-                className="text-sm leading-none font-bold"
+                className="text-sm leading-none dark:text-white bg-gradient-to-r from-indigo-500 to-purple-500 bg-clip-text text-transparent font-bold"
               >
                 Our Values & Milestones
               </span>
@@ -68,9 +68,9 @@ export default function JourneySection() {
           </p>
 
           <RainbowButton className="hover:scale-[1.035] transform transition-transform">
-            <span className="flex items-center gap-2">
+            <span className="flex items-center gap-2 text-white dark:text-black">
               Subscribe to Updates
-              <GrMail className="w-4 h-4" />
+              <GrMail className="w-4 h-4 text-white dark:text-black" />
             </span>
           </RainbowButton>
         </div>

@@ -5,7 +5,7 @@ import { RainbowButton } from "../ui/RainbowButton";
 
 export default function HeroSection() {
   return (
-    <div className="relative bg-white dark:bg-black text-black dark:text-white overflow-hidden">
+    <div className="relative bg-white dark:bg-black text-black dark:text-white">
       {/* Animated circular borders */}
       <div className="absolute inset-0">
         <div className="absolute top-1/4 left-1/4 w-64 h-64 border border-black/20 dark:border-white/10 rounded-full animate-[spin_20s_linear_infinite]" />
@@ -14,7 +14,7 @@ export default function HeroSection() {
       </div>
 
       <main className="relative z-10">
-        <div className="max-w-7xl mx-auto px-4 pt-20 lg:pt-28 mb-12 md:mb-16 lg:mb-20">
+        <div className="max-w-7xl mx-auto px-4 pt-18 lg:pt-24 mb-12 md:mb-16 lg:mb-20">
           <div className="flex justify-center items-center flex-wrap lg:flex-nowrap gap-16 lg:gap-4">
             {/* Left Content */}
             <div className="relative">
@@ -37,8 +37,8 @@ export default function HeroSection() {
                 <div className="flex flex-col sm:flex-row gap-4 ">
                   <a className="md:w-fit" href="#">
                     <RainbowButton className="hover:scale-[1.015] transition-transform">
-                      Start for Free Today
-                      <HiArrowRight className="ml-2 inline-block w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                      <span className="text-white dark:text-black">Start for Free Today</span>
+                      <HiArrowRight className="ml-2 inline-block w-5 h-5 text-white dark:text-black group-hover:translate-x-1 transition-transform" />
                     </RainbowButton>
                   </a>
                 </div>

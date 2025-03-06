@@ -49,7 +49,7 @@ export default function ThriveSection() {
 
   return (
     <section className="relative overflow-hidden py-28 mx-auto">
-      <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-black to-transparent" />
+      <div className="absolute top-0 left-0 w-full h-32 bg-gradient-b from-white to-transparent dark:bg-gradient-to-b dark:from-black dark:to-transparent" />
       <div className="container relative max-w-7xl mx-auto px-4">
         <div className="absolute left-[50px] top-0 h-96 w-96 rounded-full bg-gradient-to-br from-purple-500 via-pink-350 to-transparent opacity-20 blur-2xl pointer-events-none -z-10" />
         <div className="absolute right-[50px] top-0 h-96 w-96 rounded-full bg-gradient-to-br from-purple-500 via-pink-350 to-transparent opacity-20 blur-2xl pointer-events-none -z-10" />
@@ -73,9 +73,9 @@ export default function ThriveSection() {
               {principles.map((principle, index) => (
                 <div
                   key={index}
-                  className="rounded-xl border border-white/20 dark:bg-gray-900/50 p-4 backdrop-blur-sm md:p-6 transition-all shadow-xl duration-200 group dark:border-gray-700 bg-gradient-to-br from-slate-200 via-[#F5F3FC] to-[#e9d5ff00] dark:from-black dark:via-slate-900 dark:to-slate-950 hover:scale-[101%]"
+                  className="group relative rounded-xl dark:border-gray-700 bg-gradient-to-br from-slate-200 via-[#F5F3FC] to-[#e9d5ff00] dark:from-black dark:via-slate-900 dark:to-slate-950 hover:bg-purple-600 dark:bg-gray-900 backdrop-blur-sm p-4 md:p-6 hover:scale-[101%] transition-all duration-200 shadow-xl z-10"
                 >
-                  <div className="absolute -inset-[1px] border border-gradient rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-0" />
+                  <div className="absolute -inset-[2px] border border-gradient rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-0" />
 
                   {principle.icon}
                   <h3 className="mb-2 font-semibold text-gray-900 dark:text-white">

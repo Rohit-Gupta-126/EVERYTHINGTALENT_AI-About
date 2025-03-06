@@ -1,5 +1,4 @@
 "use client";
-import { useTheme } from "next-themes";
 import Header from "../components/Header";
 import HeroSection from "../components/sections/HeroSection";
 import VisionSection from "../components/sections/VisionSection";
@@ -11,13 +10,11 @@ import WorldSection from "../components/sections/WorldSection";
 import Footer from "../components/Footer";
 
 export default function Home() {
-  const { theme, setTheme } = useTheme();
-
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-white dark:bg-black text-black dark:text-white">
       <main>
         <div className="relative">
-          <Header theme={theme} setTheme={setTheme} />
+          <Header />
           <HeroSection />
           <VisionSection />
           <StorySection />

@@ -51,9 +51,9 @@ export default function StorySection() {
               {features.map((feature, index) => (
                 <div
                   key={index}
-                  className="group relative rounded-xl border border-white/20 bg-gradient-to-br from-slate-200 via-[#F5F3FC] to-[#e9d5ff00] dark:from-black dark:via-slate-900 dark:to-slate-950 p-4 md:p-6 transition-all duration-300 shadow-xl z-10"
+                  className="group relative rounded-xl dark:border-gray-700 bg-gradient-to-br from-slate-200 via-[#F5F3FC] to-[#e9d5ff00] dark:from-black dark:via-slate-900 dark:to-slate-950 hover:bg-purple-600 dark:bg-gray-900 backdrop-blur-sm p-4 md:p-6 hover:scale-[101%] transition-all duration-200 shadow-xl z-10"
                 >
-                  <div className="absolute -inset-[1px] border border-gradient rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-0" />
+                  <div className="absolute -inset-[2px] border border-gradient rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200 -z-0" />
 
                   <div className="relative z-10">
                     {feature.icon}

@@ -43,8 +43,8 @@ export default function WorldSection() {
       {/* Card Container */}
       <div className="flex justify-center items-center h-screen px-4 relative z-10">
         <div
-          className="border border-gradient max-w-3xl group rounded-3xl px-6 sm:px-10 md:px-12 py-16 sm:py-20 md:py-24 
-             overflow-hidden w-full mx-auto relative bg-black/40 dark:bg-black/20"
+          className="border-2 max-w-5xl group rounded-3xl px-6 sm:px-10 md:px-12 py-16 sm:py-20 md:py-24 mt-20 sm:mt-28 md:mt-40
+             overflow-hidden w-full sm:w-3/4 md:w-2/3 lg:w-1/2 flex justify-center items-center transform transition-all duration-700 ease-out opacity-80 scale-100 bg-gradient-to-r from-[#e9d5ff] to-[#bfdbfe] bg-opacity-60 dark:bg-gradient-to-r dark:from-[#1e0e24] dark:to-[#26161b] dark:bg-opacity-60"
         >
           <div className="absolute -top-4 -right-2 w-48 h-48 transition-transform duration-200 group-hover:scale-105 md:w-44 md:h-44 translate-x-1/4 -translate-y-1/4">
             <div className="relative w-full h-full">
@@ -73,17 +73,19 @@ export default function WorldSection() {
               </GradientText>
             </h2>
 
-            <p className="text-lg sm:text-xl md:text-xl text-gray-600">
+            <p className="text-lg sm:text-xl md:text-xl text-gray-600 dark:text-slate-300">
               Help us reimagine the future of hiring in the tech industry.
             </p>
 
-            <RainbowButton className="mt-4 opacity-80 hover:scale-[1.015] transition-transform">
-              Start Here
-              <HiArrowRight className="ml-2 inline-block w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            <RainbowButton className="mt-4 hover:scale-[1.015] transition-transform">
+              <span className="text-white dark:text-black">
+                Start Here
+              </span>
+              <HiArrowRight className="ml-2 inline-block w-5 h-5 text-white dark:text-black hover:translate-x-1 transition-transform duration-200" />
             </RainbowButton>
           </div>
 
-          <div className="absolute -inset-[2px] rounded-3xl border border-gradient backdrop-blur-xs -z-10" />
+          {/* <div className="absolute -inset-[2px] rounded-3xl border border-gradient backdrop-blur-xs -z-10" /> */}
         </div>
       </div>
     </section>

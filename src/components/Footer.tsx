@@ -140,7 +140,7 @@ export default function Footer() {
               alt="San Francisco skyline"
               src="/images/bottom_san_fransisco_skyline.webp"
               fill
-              className="object-fill opacity-55"
+              className="object-fill opacity-50"
               quality={100}
               sizes="(max-width: 768px) 100vw, 50vw"
             />
@@ -162,7 +162,7 @@ export default function Footer() {
               >
                 <GradientText
                   colors={["#B11AFF", "#FF689F"]}
-                  className="text-2xl md:text-3xl font-bold tracking-widest select-none"
+                  className="text-2xl md:text-3xl font-bold tracking-widest text-transparent bg-clip-text select-none"
                   style={{ opacity }}
                 >
                   EVERYTHINGTALENT.AI
