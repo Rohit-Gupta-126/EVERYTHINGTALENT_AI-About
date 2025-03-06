@@ -78,14 +78,10 @@ export default function WorldSection() {
             </p>
 
             <RainbowButton className="mt-4 hover:scale-[1.015] transition-transform">
-              <span className="text-white dark:text-black">
-                Start Here
-              </span>
+              <span className="text-white dark:text-black">Start Here</span>
               <HiArrowRight className="ml-2 inline-block w-5 h-5 text-white dark:text-black hover:translate-x-1 transition-transform duration-200" />
             </RainbowButton>
           </div>
-
-          {/* <div className="absolute -inset-[2px] rounded-3xl border border-gradient backdrop-blur-xs -z-10" /> */}
         </div>
       </div>
     </section>
