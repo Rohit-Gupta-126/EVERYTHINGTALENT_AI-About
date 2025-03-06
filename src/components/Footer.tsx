@@ -135,14 +135,15 @@ export default function Footer() {
 
         {/* Background Image Section */}
         <section className="relative">
-          <div className="relative h-[26rem] w-full">
+          <div className="relative h-[200px] sm:h-[300px] md:h-[400px] w-full">
             <Image
               alt="San Francisco skyline"
               src="/images/bottom_san_fransisco_skyline.webp"
               fill
-              className="object-fill opacity-50"
+              className="object-fit opacity-50"
               quality={100}
               sizes="(max-width: 768px) 100vw, 50vw"
+              priority
             />
           </div>
           <div className="absolute inset-0 pointer-events-none">
@@ -152,7 +153,7 @@ export default function Footer() {
         </section>
 
         {/* Gradient Text Overlay */}
-        <div className="absolute bottom-70 max-lg:bottom-40 right-20 hidden sm:block">
+        <div className="absolute bottom-70 max-lg:bottom-40 right-20 hidden sm:block max-sm:hidden">
           <div className="w-[600px] h-[300px] flex items-center justify-center">
             {opacities.map((opacity, idx) => (
               <div
@@ -174,8 +175,8 @@ export default function Footer() {
       </section>
 
       {/* Copyright Section */}
-      <section className="mx-auto md:container px-4 sm:px-6">
-        <div className="sm:flex sm:items-center sm:justify-center mt-6">
+      <section className="mx-auto container px-4 sm:px-6">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 mt-6 text-center">
           <span className="text-sm text-gray-400">
             © 2025{" "}
             <a
