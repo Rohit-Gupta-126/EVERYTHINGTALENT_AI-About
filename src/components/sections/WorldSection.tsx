@@ -6,7 +6,7 @@ import { HiArrowRight } from "react-icons/hi";
 
 export default function WorldSection() {
   return (
-    <section className="relative min-h-screen">
+    <section className="relative min-h-[50vh] lg:min-h-screen">
       {/* World Map Background */}
       <div className="absolute inset-0 z-0">
         <WorldMap
@@ -41,11 +41,8 @@ export default function WorldSection() {
       </div>
 
       {/* Card Container */}
-      <div className="flex justify-center items-center h-screen px-4 relative z-10">
-        <div
-          className="border-2 max-w-5xl group rounded-3xl px-6 sm:px-10 md:px-12 py-16 sm:py-20 md:py-24 mt-20 sm:mt-28 md:mt-40
-             overflow-hidden w-full sm:w-3/4 md:w-2/3 lg:w-1/2 flex justify-center items-center transform transition-all duration-700 ease-out opacity-80 scale-100 bg-gradient-to-r from-[#e9d5ff] to-[#bfdbfe] bg-opacity-60 dark:bg-gradient-to-r dark:from-[#1e0e24] dark:to-[#26161b] dark:bg-opacity-60"
-        >
+      <div className="flex justify-center items-center h-full px-4 py-16 md:py-24 lg:py-32 relative z-10">
+        <div className="border-2 max-w-5xl group rounded-3xl px-6 sm:px-8 md:px-12 py-12 sm:py-16 md:py-20 mt-8 sm:mt-12 md:mt-16 overflow-hidden w-full sm:w-3/4 md:w-2/3 lg:w-1/2 flex justify-center items-center transform transition-all duration-700 ease-out opacity-80 scale-100 bg-gradient-to-r from-[#e9d5ff] to-[#bfdbfe] bg-opacity-60 dark:bg-gradient-to-r dark:from-[#1e0e24] dark:to-[#26161b] dark:bg-opacity-60">
           <div className="absolute -top-4 -right-2 w-48 h-48 transition-transform duration-200 group-hover:scale-105 md:w-44 md:h-44 translate-x-1/4 -translate-y-1/4">
             <div className="relative w-full h-full">
               <div className="absolute inset-0 animate-pulse">

@@ -27,22 +27,22 @@ export default function StorySection() {
   ];
 
   return (
-    <section className="relative overflow-hidden py-16 md:py-28 mx-auto">
-      <div className="pointer-events-none absolute inset-y-0 bottom-0 w-full h-[100px] md:h-[200px] bg-gradient-to-b from-white dark:from-[#09090b]" />
+    <section className="relative overflow-hidden py-16 md:py-24 lg:py-28 mx-auto">
+      <div className="pointer-events-none absolute inset-y-0 bottom-0 w-full h-[80px] md:h-[150px] lg:h-[200px] bg-gradient-to-b from-white dark:from-[#09090b]" />
       <div className="absolute inset-0 -z-10 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] dark:bg-black" />
 
       <div className="container relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="absolute left-[50px] top-0 h-96 w-96 rounded-full bg-gradient-to-br from-purple-500/30 via-pink-350/30 to-transparent opacity-20 blur-2xl -z-10" />
-        <div className="absolute right-[50px] top-0 h-96 w-96 rounded-full bg-gradient-to-br from-purple-500/30 via-pink-350/30 to-transparent opacity-20 blur-2xl -z-10" />
-        <div className="absolute -top-40 -right-40 h-80 w-80 rounded-full bg-purple-500/10 blur-3xl" />
-        <div className="absolute -bottom-40 -left-40 h-80 w-80 rounded-full bg-blue-500/10 blur-3xl" />
+        <div className="absolute left-[20px] md:left-[50px] top-0 h-64 w-64 md:h-96 md:w-96 rounded-full bg-gradient-to-br from-purple-500/30 via-pink-350/30 to-transparent opacity-20 blur-2xl -z-10" />
+        <div className="absolute right-[20px] md:right-[50px] top-0 h-64 w-64 md:h-96 md:w-96 rounded-full bg-gradient-to-br from-purple-500/30 via-pink-350/30 to-transparent opacity-20 blur-2xl -z-10" />
+        <div className="absolute -top-20 md:-top-40 -right-20 md:-right-40 h-48 w-48 md:h-80 md:w-80 rounded-full bg-purple-500/10 blur-3xl" />
+        <div className="absolute -bottom-20 md:-bottom-40 -left-20 md:-left-40 h-48 w-48 md:h-80 md:w-80 rounded-full bg-blue-500/10 blur-3xl" />
 
-        <div className="flex flex-col lg:flex-row lg:gap-20 gap-12">
+        <div className="flex flex-col lg:flex-row lg:gap-12 xl:gap-20 gap-8">
           <div className="lg:w-1/2 relative">
-            <h2 className="mb-6 text-4xl font-bold tracking-tight dark:text-white sm:text-5xl">
+            <h2 className="mb-6 text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight dark:text-white">
               The <span className="gradient-text">Story</span> Behind Us
             </h2>
-            <p className="mb-8 text-lg leading-relaxed text-gray-600 dark:text-gray-300">
+            <p className="mb-8 text-base md:text-lg leading-relaxed text-gray-600 dark:text-gray-300">
               It all started with one question: What if hiring didn&apos;t have
               to feel like gambling on a hunch?
             </p>
@@ -69,8 +69,9 @@ export default function StorySection() {
             </div>
           </div>
 
+          {/* Right Image */}
           <div className="lg:w-1/2 relative">
-            <div className="relative h-64 sm:h-80 md:h-[500px] w-full transition-transform duration-300 hover:scale-x-[1.015] overflow-hidden rounded-xl md:rounded-2xl">
+            <div className="relative h-[300px] sm:h-[400px] md:h-[500px] w-full transition-transform duration-300 hover:scale-x-[1.015] overflow-hidden rounded-xl md:rounded-2xl">
               <Image
                 src="https://www.everythingtalent.ai/assets/about-us/our-story.svg"
                 alt="Team collaboration"

@@ -9,11 +9,11 @@ export default function Footer() {
   return (
     <footer className="relative py-4 sm:py-6 bg-black overflow-hidden">
       <section className="mx-auto">
-        <div className="px-4 md:px-24 md:pt-16 pb-10 flex flex-col gap-[10px] md:gap-[15px]">
-          <div className="lg:flex md:gap-48">
+        <div className="px-4 lg:px-24 md:pt-16 pb-10 flex flex-col gap-4 md:gap-[15px]">
+          <div className="lg:flex md:gap-24 lg:gap-48">
             {/* Logo & Social Section */}
             <div className="max-w-72 mb-8 md:mb-0 mx-auto text-center lg:text-left lg:mx-0">
-              <div className="-ml-1 h-40 w-40 mb-6 relative mx-auto">
+              <div className="mx-auto lg:-ml-1 h-32 w-32 md:h-40 md:w-40 mb-6 relative">
                 <Image
                   alt="Everything Talent Logo"
                   src="/images/logo.webp"
@@ -23,52 +23,52 @@ export default function Footer() {
                   priority
                 />
               </div>
-              <span className="text-3xl font-semibold text-white block">
+              <span className="text-2xl md:text-3xl font-semibold text-white block">
                 Everything Talent
               </span>
-              <h2 className="text-sm font-semibold text-gray-400 mt-2">
+              <h2 className="text-xs md:text-sm font-semibold text-gray-400 mt-2">
                 Enhancing Hiring with AI-powered assessment and tracking for
                 accurate recruitment
               </h2>
 
-              <div className="flex items-center justify-center lg:justify-start space-x-6 mt-6">
+              <div className="flex items-center justify-center lg:justify-start space-x-4 md:space-x-6 mt-4 md:mt-6">
                 <a
                   href="https://twitter.com/EVRYTNGTALENT"
                   target="_blank"
                   rel="noopener"
                 >
-                  <FaTwitter className="w-6 h-6 text-white hover:text-gray-500 transition-colors" />
+                  <FaTwitter className="w-5 h-5 md:w-6 md:h-6 text-white hover:text-gray-500 transition-colors" />
                 </a>
                 <a
                   href="https://linkedin.com/company/everything-talent-ai"
                   target="_blank"
                   rel="noopener"
                 >
-                  <FaLinkedin className="w-6 h-6 text-white hover:text-gray-500 transition-colors" />
+                  <FaLinkedin className="w-5 h-5 md:w-6 md:h-6 text-white hover:text-gray-500 transition-colors" />
                 </a>
                 <a
                   href="https://youtube.com/channel/UCK5H3HNz_5gtZkFDBG2ar1A"
                   target="_blank"
                   rel="noopener"
                 >
-                  <FaYoutube className="w-7 h-7 text-white hover:text-gray-500 transition-colors" />
+                  <FaYoutube className="w-6 h-6 md:w-7 md:h-7 text-white hover:text-gray-500 transition-colors" />
                 </a>
                 <a
                   href="https://facebook.com/EVRYTNGTALENT"
                   target="_blank"
                   rel="noopener"
                 >
-                  <FaFacebook className="w-6 h-6 text-white hover:text-gray-500 transition-colors" />
+                  <FaFacebook className="w-5 h-5 md:w-6 md:h-6 text-white hover:text-gray-500 transition-colors" />
                 </a>
               </div>
             </div>
 
-            <div className="grid grid-cols-2 gap-10 sm:gap-28 sm:grid-cols-3 mt-8">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-6 sm:gap-10 md:gap-28 mt-8">
               <div>
-                <h2 className="mb-6 text-sm font-semibold uppercase text-white">
+                <h2 className="mb-4 md:mb-6 text-xs md:text-sm font-semibold uppercase text-white">
                   Resources
                 </h2>
-                <ul className="text-gray-400 space-y-4">
+                <ul className="text-gray-400 space-y-2 md:space-y-4">
                   {[
                     "Blogs",
                     "Success Stories",
@@ -79,7 +79,10 @@ export default function Footer() {
                     "Support",
                   ].map((item) => (
                     <li key={item}>
-                      <a href="#" className="hover:underline text-sm">
+                      <a
+                        href="#"
+                        className="hover:underline text-xs md:text-sm"
+                      >
                         {item}
                       </a>
                     </li>
@@ -88,10 +91,10 @@ export default function Footer() {
               </div>
 
               <div>
-                <h2 className="mb-6 text-sm font-semibold uppercase text-white">
+                <h2 className="mb-4 md:mb-6 text-xs md:text-sm font-semibold uppercase text-white">
                   Get Started
                 </h2>
-                <ul className="text-gray-400 space-y-4">
+                <ul className="text-gray-400 space-y-2 md:space-y-4">
                   {[
                     "Pricing",
                     "Hiring Solutions",
@@ -102,7 +105,10 @@ export default function Footer() {
                     "Trust",
                   ].map((item) => (
                     <li key={item}>
-                      <a href="#" className="hover:underline text-sm">
+                      <a
+                        href="#"
+                        className="hover:underline text-xs md:text-sm"
+                      >
                         {item}
                       </a>
                     </li>
@@ -111,10 +117,10 @@ export default function Footer() {
               </div>
 
               <div>
-                <h2 className="mb-6 text-sm font-semibold uppercase text-white">
+                <h2 className="mb-4 md:mb-6 text-xs md:text-sm font-semibold uppercase text-white">
                   Legal
                 </h2>
-                <ul className="text-gray-400 space-y-4">
+                <ul className="text-gray-400 space-y-2 md:space-y-4">
                   {[
                     "Privacy Policy",
                     "Terms of Service",
@@ -122,7 +128,10 @@ export default function Footer() {
                     "CCPA Compliance",
                   ].map((item) => (
                     <li key={item}>
-                      <a href="#" className="hover:underline text-sm">
+                      <a
+                        href="#"
+                        className="hover:underline text-xs md:text-sm"
+                      >
                         {item}
                       </a>
                     </li>
@@ -135,12 +144,12 @@ export default function Footer() {
 
         {/* Background Image Section */}
         <section className="relative">
-          <div className="relative h-[200px] sm:h-[300px] md:h-[400px] w-full">
+          <div className="relative h-[150px] sm:h-[250px] md:h-[350px] w-full">
             <Image
               alt="San Francisco skyline"
               src="/images/bottom_san_fransisco_skyline.webp"
               fill
-              className="object-fit opacity-50"
+              className="object-fit opacity-60"
               quality={100}
               sizes="(max-width: 768px) 100vw, 50vw"
               priority
@@ -153,8 +162,8 @@ export default function Footer() {
         </section>
 
         {/* Gradient Text Overlay */}
-        <div className="absolute bottom-70 max-lg:bottom-40 right-20 hidden sm:block max-sm:hidden">
-          <div className="w-[600px] h-[300px] flex items-center justify-center">
+        <div className="absolute bottom-20 md:bottom-40 lg:bottom-70 right-4 md:right-20 max-sm:hidden">
+          <div className="w-[300px] h-[150px] md:w-[400px] md:h-[200px] lg:w-[600px] lg:h-[300px] flex items-center justify-center">
             {opacities.map((opacity, idx) => (
               <div
                 key={idx}
@@ -163,7 +172,7 @@ export default function Footer() {
               >
                 <GradientText
                   colors={["#B11AFF", "#FF689F"]}
-                  className="text-2xl md:text-3xl font-bold tracking-widest text-transparent bg-clip-text select-none"
+                  className="text-xl md:text-2xl lg:text-3xl font-bold tracking-widest text-transparent bg-clip-text select-none"
                   style={{ opacity }}
                 >
                   EVERYTHINGTALENT.AI
@@ -177,7 +186,7 @@ export default function Footer() {
       {/* Copyright Section */}
       <section className="mx-auto container px-4 sm:px-6">
         <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 mt-6 text-center">
-          <span className="text-sm text-gray-400">
+          <span className="text-xs md:text-sm text-gray-400">
             © 2025{" "}
             <a
               href="https://everythingtalent.ai"

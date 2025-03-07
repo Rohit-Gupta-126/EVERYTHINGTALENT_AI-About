@@ -24,11 +24,11 @@ export default function PhilosophySection() {
 
     return () => clearTimeout(timer);
   }, [typedText, isDeleting]);
-  
+
   return (
-    <section className="relative h-full w-full bg-white dark:bg-slate-950 py-8 sm:py-16 md:py-28 px-4 sm:px-6 lg:px-8">
+    <section className="relative h-full w-full bg-white dark:bg-slate-950 py-8 md:py-16 lg:py-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col items-center mb-8 sm:mb-16">
+        <div className="flex flex-col items-center mb-8 sm:mb-12 lg:mb-16">
           <div className="flex items-center justify-center w-full">
             <div className="dark:bg-[#404040] bg-gray-100 py-1 px-2 rounded-lg">
               <small className="text-sm leading-none text-center w-full dark:text-white bg-gradient-to-r from-indigo-500 to-purple-500 bg-clip-text text-transparent font-bold">
@@ -36,27 +36,25 @@ export default function PhilosophySection() {
               </small>
             </div>
           </div>
-          <h2 className="mt-5 mb-5 text-5xl leading-[44px] md:text-center font-bold text-gray-900 dark:text-white">
+          <h2 className="mt-5 mb-5 text-3xl md:text-4xl lg:text-5xl leading-[1.2] md:text-center font-bold text-gray-900 dark:text-white">
             Our Philosophy in{" "}
-            <GradientText className="bg-clip-text">
-              Action
-            </GradientText>
+            <GradientText className="bg-clip-text">Action</GradientText>
           </h2>
-          <p className="text-gray-600 sm:text-xl sm:leading-[30px] dark:text-slate-400 text-center">
+          <p className="text-gray-600 text-base md:text-lg lg:text-xl dark:text-slate-400 text-center max-w-2xl mx-auto">
             At Everything Talent, Bringing Our Values to Life Through Meaningful
             Actions
           </p>
         </div>
 
         <div className="storybook-fix w-full">
-          <div className="grid grid-cols-1 gap-3 sm:grid-cols-4 sm:grid-rows-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
             {/* Card 01 - Honesty */}
             <div className="relative h-full w-full overflow-hidden rounded-2xl p-4 flex flex-col bg-yellow-300">
               <div className="font-bold text-yellow-700">01</div>
               <div className="mt-auto flex justify-end">
-                <div className="text-xl font-black text-black/60 md:text-2xl">
+                <div className="text-lg md:text-xl font-black text-black/60">
                   <p>
-                    With us, there are no surprises&mdash;just straight talk and
+                    With us, there are no surprises—just straight talk and
                     genuine commitment.
                   </p>
                   <sup className="text-sm text-yellow-700">#HONESTY</sup>
@@ -66,7 +64,7 @@ export default function PhilosophySection() {
 
             {/* Card 03 - Urgency */}
             <div className="h-full w-full rounded-2xl p-4 relative flex flex-col overflow-visible bg-violet-500 sm:col-span-2">
-              <strong className="text-2xl font-semibold text-white">
+              <strong className="text-xl md:text-2xl font-semibold text-white">
                 <div className="font-bold text-[#4f357d]">03</div>
                 <p>
                   We act with urgency to ensure progress and deliver results
@@ -109,15 +107,14 @@ export default function PhilosophySection() {
             <div className="relative h-full w-full overflow-hidden rounded-2xl p-4 flex flex-col bg-orange-300">
               <Bot className="size-8 md:size-12" />
               <div className="text-sm font-medium text-black">02</div>
-              <strong className="mt-1 inline-block font-bold text-2xl">
+              <strong className="mt-1 inline-block font-bold text-xl md:text-2xl">
                 Embrace hard work
               </strong>
               <div className="font-semibold mt-5">
                 <div className="relative font-mono h-6">
                   <div className="absolute inset-0 overflow-hidden">
                     <span className="animate-typing">{typedText}</span>
-                    <span className="animate-pulse border-r-2 border-white">
-                    </span>
+                    <span className="animate-pulse border-r-2 border-white"></span>
                   </div>
                 </div>
               </div>
@@ -126,9 +123,9 @@ export default function PhilosophySection() {
             {/* Card 05 - Aspiration */}
             <div className="relative h-full w-full overflow-hidden rounded-2xl p-4 flex bg-lime-300 sm:col-span-2">
               <div className="text-sm font-medium text-lime-600">05</div>
-              <div className="text-xl mt-5 font-black text-lime-800">
-                We&rsquo;re here to help you aim higher, break limits, and achieve
-                what others might think impossible.
+              <div className="text-lg md:text-xl mt-5 font-black text-lime-800">
+                We&rsquo;re here to help you aim higher, break limits, and
+                achieve what others might think impossible.
               </div>
               <sup className="text-sm mt-20 -ml-52 text-lime-600">
                 #ASPIRATION
@@ -139,10 +136,10 @@ export default function PhilosophySection() {
             <div className="relative h-full w-full overflow-hidden rounded-2xl p-4 flex flex-col items-center justify-center bg-zinc-300 sm:col-span-2">
               <div className="text-sm font-medium text-neutral-800">06</div>
               <div className="group relative flex items-center justify-center px-2 py-2 md:px-6 md:py-4 bg-transparent">
-                <div className="text-2xl font-black uppercase text-gray-200 transition-all group-hover:opacity-50 md:text-4xl">
+                <div className="text-xl md:text-2xl font-black uppercase text-gray-200 transition-all group-hover:opacity-50">
                   Do hard things
                 </div>
-                <div className="text-md absolute font-black uppercase transition-all group-hover:text-4xl md:text-3xl group-hover:md:text-4xl text-zinc-800">
+                <div className="text-md absolute font-black uppercase transition-all group-hover:text-2xl text-zinc-800">
                   Do hard things
                 </div>
               </div>
@@ -170,7 +167,7 @@ export default function PhilosophySection() {
             <div className="h-full w-full overflow-hidden rounded-2xl p-4 relative flex flex-col bg-blue-200 sm:col-span-2">
               <div className="mt-4">
                 <div className="text-sm font-medium text-blue-800">08</div>
-                <p className="text-2xl mt-5">
+                <p className="text-lg md:text-xl mt-5">
                   Commit to continuous learning and improvement
                 </p>
                 <div className="text-sm mt-3 text-blue-800">#LEARNING</div>
@@ -181,7 +178,7 @@ export default function PhilosophySection() {
               <div className="flex">
                 <div>
                   <div className="text-sm font-medium text-[#6C1717]">10</div>
-                  <div className="text-2xl font-black text-black/60">
+                  <div className="text-lg md:text-xl font-black text-black/60">
                     Every project, every solution we create is aimed at
                     contributing to something greater.
                   </div>
@@ -195,7 +192,7 @@ export default function PhilosophySection() {
             <div className="h-full w-full overflow-hidden rounded-2xl p-4 relative flex flex-col bg-[#F77C73] sm:col-span-2">
               <div className="mt-4">
                 <div className="text-sm font-medium text-[#4E1B26]">09</div>
-                <p className="text-2xl text-white">
+                <p className="text-lg md:text-xl text-white">
                   Build trust through actions, not just words.
                 </p>
                 <div className="text-sm text-[#4E1B26]">#TRUST</div>
