@@ -99,7 +99,7 @@ export default function VisionSection() {
             </p>
           </div>
 
-          <div className="inline-flex flex-wrap justify-center gap-2 cursor-pointer bg-gradient-to-br border border-white/10 from-slate-200 via-[#F5F3FC] to-[#e9d5ff00] dark:from-black dark:via-slate-900 dark:to-slate-950 rounded-full p-1 shadow-md mb-8 md:mb-16 hover:scale-x-[1.01] transition-transform duration-200">
+          <div className="inline-flex flex-wrap justify-center gap-2 cursor-pointer bg-gradient-to-br border border-white/10 from-slate-200 via-[#F5F3FC] to-[#e9d5ff00] dark:from-black dark:via-slate-900 dark:to-slate-950 rounded-full p-1 shadow-md mb-8 md:mb-16 hover:scale-x-[1.01] transition-transform duration-200 max-sm:hidden">
             {Object.keys(tabsContent).map((tab) => (
               <button
                 key={tab}
