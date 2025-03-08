@@ -34,14 +34,19 @@ export default function HeroSection() {
                 </p>
 
                 {/* Gradient Button */}
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <a className="md:w-fit" href="#">
-                    <RainbowButton className="hover:scale-[1.015] transition-transform">
-                      <span className="text-white dark:text-black">
-                        Start for Free Today
-                      </span>
-                      <HiArrowRight className="ml-2 inline-block w-5 h-5 text-white dark:text-black group-hover:translate-x-1 transition-transform" />
-                    </RainbowButton>
+                <div className="flex flex-col sm:flex-row gap-4 p-1">
+                  <a
+                    className="md:w-fit hover:scale-[1.02] transition-transform"
+                    href="#"
+                  >
+                    <div className="rounded-lg background-gradient p-0.5">
+                      <RainbowButton className="text-sm px-6">
+                        <span className="text-white dark:text-black">
+                          Start for Free Today
+                        </span>
+                        <HiArrowRight className="ml-2 inline-block w-5 h-5 text-white dark:text-black group-hover:translate-x-1 transition-transform" />
+                      </RainbowButton>
+                    </div>
                   </a>
                 </div>
               </div>

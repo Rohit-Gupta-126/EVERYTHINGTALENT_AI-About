@@ -55,7 +55,7 @@ export default function ThriveSection() {
         <div className="absolute right-[20px] md:right-[50px] top-0 h-64 w-64 md:h-96 md:w-96 rounded-full bg-gradient-to-br from-purple-500 via-pink-350 to-transparent opacity-20 blur-2xl pointer-events-none -z-10" />
         <div className="absolute -top-20 md:-top-40 -right-20 md:-right-40 h-48 w-48 md:h-80 md:w-80 rounded-full bg-purple-500/10 blur-3xl" />
         <div className="absolute -bottom-20 md:-bottom-40 -left-20 md:-left-40 h-48 w-48 md:h-80 md:w-80 rounded-full bg-blue-500/10 blur-3xl" />
-        
+
         <div className="flex flex-col lg:flex-row lg:gap-12 xl:gap-20 gap-8">
           {/* Left Part */}
           <div className="lg:w-1/2 relative max-sm:hidden">
@@ -87,16 +87,17 @@ export default function ThriveSection() {
               {principles.map((principle, index) => (
                 <div
                   key={index}
-                  className="group relative rounded-xl dark:border-gray-700 bg-gradient-to-br from-slate-200 via-[#F5F3FC] to-[#e9d5ff00] dark:from-black dark:via-slate-900 dark:to-slate-950 hover:bg-purple-600 dark:bg-gray-900 backdrop-blur-sm p-4 md:p-6 hover:scale-[101%] transition-all duration-200 shadow-xl z-10"
+                  className="group relative rounded-xl background-gradient p-0.5 hover:scale-[101%] transition-all duration-200 shadow-xl"
                 >
-                  <div className="absolute -inset-[2px] border border-gradient rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-0" />
-                  {principle.icon}
-                  <h3 className="mb-2 font-semibold text-gray-900 dark:text-white">
-                    {principle.title}
-                  </h3>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">
-                    {principle.description}
-                  </p>
+                  <div className="h-full w-full rounded-lg dark:border-gray-700 bg-gradient-to-br from-slate-200 via-[#F5F3FC] to-[#e9d5ff00] dark:from-black dark:via-slate-900 dark:to-slate-950 hover:bg-purple-600 dark:bg-gray-900 backdrop-blur-sm p-4 md:p-6">
+                    {principle.icon}
+                    <h3 className="mb-2 font-semibold text-gray-900 dark:text-white">
+                      {principle.title}
+                    </h3>
+                    <p className="text-sm text-gray-500 dark:text-gray-400">
+                      {principle.description}
+                    </p>
+                  </div>
                 </div>
               ))}
             </div>

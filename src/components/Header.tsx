@@ -59,25 +59,29 @@ export default function Header() {
 
         {/* Right Container */}
         <div className="flex items-center space-x-3 rounded-lg border-2 border-slate-400/60 dark:border-white/30 bg-slate-200/40 dark:bg-black/40 backdrop-blur-sm animate-fade-in-left -pt-1">
-          <RainbowButton className="h-10 w-36 lg:w-44 invert-100 dark:invert-100 bg-black/70 hover:scale-[1.015] transition-transform">
-            <div className="relative z-10 flex items-center rounded-lg space-x-1">
-              <span className="text-sm text-white dark:text-black cursor-pointer font-medium">
-                Request a Demo
-              </span>
-              <HiOutlineChevronRight className="scale-125 text-white dark:text-black" />
-            </div>
-          </RainbowButton>
+          <div className="rounded-lg background-gradient p-0.5 hover:scale-[0.98] transition-transform">
+            <RainbowButton className="h-10 w-36 lg:w-44 invert-100 dark:invert-100 bg-black/70">
+              <div className="relative z-10 flex items-center rounded-lg space-x-1">
+                <span className="text-sm text-white dark:text-black cursor-pointer font-medium">
+                  Request a Demo
+                </span>
+                <HiOutlineChevronRight className="scale-125 text-white dark:text-black group-hover:translate-x-1 transition-transform" />
+              </div>
+            </RainbowButton>
+          </div>
 
           <ThemeDropdown />
 
-          <RainbowButton className="mr-1 h-10 w-20 lg:w-24 invert-100 dark:invert-0 hover:scale-[1.015] transition-transform">
-            <div className="relative z-10 flex items-center rounded-lg">
-              <span className="text-sm text-white dark:text-black cursor-pointer font-medium">
-                Login
-              </span>
-              <HiArrowRight className="ml-1 text-white dark:text-black group-hover:translate-x-1 transition-transform" />
-            </div>
-          </RainbowButton>
+          <div className="rounded-lg background-gradient p-[3px] mr-1 hover:scale-[0.99] transition-transform">
+            <RainbowButton className="h-10 w-20 lg:w-24 invert-100 dark:invert-0">
+              <div className="relative z-10 flex items-center rounded-lg">
+                <span className="text-sm text-white dark:text-black cursor-pointer font-medium">
+                  Login
+                </span>
+                <HiArrowRight className="ml-1 text-white dark:text-black group-hover:translate-x-1 transition-transform" />
+              </div>
+            </RainbowButton>
+          </div>
         </div>
       </div>
 

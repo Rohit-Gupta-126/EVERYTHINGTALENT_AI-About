@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { Brain, Users, GraduationCap, Rocket } from "lucide-react";
+import GradientText from "../ui/GradientText";
 
 export default function StorySection() {
   const features = [
@@ -40,7 +41,7 @@ export default function StorySection() {
         <div className="flex flex-col lg:flex-row lg:gap-12 xl:gap-20 gap-8">
           <div className="lg:w-1/2 relative">
             <h2 className="mb-6 text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight dark:text-white">
-              The <span className="gradient-text">Story</span> Behind Us
+              The <GradientText>Story</GradientText> Behind Us
             </h2>
             <p className="mb-8 text-base md:text-lg leading-relaxed text-gray-600 dark:text-gray-300">
               It all started with one question: What if hiring didn&apos;t have
@@ -51,11 +52,9 @@ export default function StorySection() {
               {features.map((feature, index) => (
                 <div
                   key={index}
-                  className="group relative rounded-xl dark:border-gray-700 bg-gradient-to-br from-slate-200 via-[#F5F3FC] to-[#e9d5ff00] dark:from-black dark:via-slate-900 dark:to-slate-950 hover:bg-purple-600 dark:bg-gray-900 backdrop-blur-sm p-4 md:p-6 hover:scale-[101%] transition-all duration-200 shadow-xl z-10"
+                  className="group relative rounded-xl background-gradient p-0.5 hover:scale-[101%] transition-all duration-200 shadow-xl"
                 >
-                  <div className="absolute -inset-[2px] border border-gradient rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200 -z-0" />
-
-                  <div className="relative z-10">
+                  <div className="h-full w-full rounded-lg dark:border-gray-700 bg-gradient-to-br from-slate-200 via-[#F5F3FC] to-[#e9d5ff00] dark:from-black dark:via-slate-900 dark:to-slate-950 hover:bg-purple-600 dark:bg-gray-900 backdrop-blur-sm p-4 md:p-6">
                     {feature.icon}
                     <h3 className="mb-2 font-semibold text-gray-900 dark:text-white z-10">
                       {feature.title}

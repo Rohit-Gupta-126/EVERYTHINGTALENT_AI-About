@@ -42,25 +42,6 @@ const config: Config = {
         ":root": colorVariables as { [key: string]: string },
       });
     }),
-    plugin(function ({ addUtilities }) {
-      addUtilities({
-        ".border-gradient": {
-          borderImage: "linear-gradient(135deg, #3b82f6 10%, #8b5cf6 40%, rgb(216, 142, 4) 100%)",
-          borderImageSlice: "1",
-          borderWidth: "3px",
-          borderStyle: "solid",
-          borderRadius: "20px",
-        },
-        ".border-gradient-to-r": {
-          borderImage:
-            "linear-gradient(to right, var(--tw-gradient-from), var(--tw-gradient-to))",
-          borderImageSlice: "1",
-          borderWidth: "2px",
-          borderStyle: "solid",
-          borderRadius: "20px",
-        },
-      });
-    }),
   ],
 };
 

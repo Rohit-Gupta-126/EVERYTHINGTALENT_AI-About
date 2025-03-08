@@ -42,7 +42,7 @@ export default function WorldSection() {
 
       {/* Card Container */}
       <div className="flex justify-center items-center h-full px-4 py-16 md:py-24 lg:py-32 relative z-10">
-        <div className="border-2 max-w-5xl group rounded-3xl px-6 sm:px-8 md:px-12 py-12 sm:py-16 md:py-20 mt-8 sm:mt-12 md:mt-16 overflow-hidden w-full sm:w-3/4 md:w-2/3 lg:w-1/2 flex justify-center items-center transform transition-all duration-700 ease-out opacity-80 scale-100 bg-gradient-to-r from-[#e9d5ff] to-[#bfdbfe] bg-opacity-60 dark:bg-gradient-to-r dark:from-[#1e0e24] dark:to-[#26161b] dark:bg-opacity-60">
+        <div className="border-gradient max-w-5xl group rounded-3xl px-6 sm:px-8 md:px-12 py-12 sm:py-16 md:py-20 mt-8 sm:mt-12 md:mt-16 overflow-hidden w-full sm:w-3/4 md:w-2/3 lg:w-1/2 flex justify-center items-center transform transition-all duration-700 ease-out opacity-80 scale-100 bg-gradient-to-r from-[#e9d5ff] to-[#bfdbfe] bg-opacity-60 dark:bg-gradient-to-r dark:from-[#1e0e24] dark:to-[#26161b] dark:bg-opacity-60">
           <div className="absolute -top-4 -right-2 w-48 h-48 transition-transform duration-200 group-hover:scale-105 md:w-44 md:h-44 translate-x-1/4 -translate-y-1/4">
             <div className="relative w-full h-full">
               <div className="absolute inset-0 animate-pulse">
@@ -74,10 +74,14 @@ export default function WorldSection() {
               Help us reimagine the future of hiring in the tech industry.
             </p>
 
-            <RainbowButton className="mt-4 hover:scale-[1.015] transition-transform">
-              <span className="text-white dark:text-black">Start Here</span>
-              <HiArrowRight className="ml-2 inline-block w-5 h-5 text-white dark:text-black hover:translate-x-1 transition-transform duration-200" />
-            </RainbowButton>
+            <a className="mt-4 hover:scale-[1.02] transition-transform" href="#">
+              <div className="rounded-lg background-gradient p-[2px]">
+                <RainbowButton className="text-md px-6 items-center">
+                  <span className="text-white dark:text-black">Start Here</span>
+                  <HiArrowRight className="ml-1 -mt-0.5 inline w-5 h-5 text-white dark:text-black group-hover:translate-x-1 transition-transform" />
+                </RainbowButton>
+              </div>
+            </a>
           </div>
         </div>
       </div>

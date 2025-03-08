@@ -11,13 +11,21 @@ body {
 }
 
 @keyframes spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes spin_reverse {
-  from { transform: rotate(360deg); }
-  to { transform: rotate(0deg); }
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
 }
 
 .animate-spin_reverse {
@@ -25,43 +33,41 @@ body {
 }
 
 @keyframes border-flow {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-.gradient-text {
-  background: linear-gradient(135deg, #8b5cf6 0%, #3b82f6 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
-
-.gradient-border {
-  background: linear-gradient(135deg, #8b5cf6 0%, #3b82f6 100%);
-  background-size: 200% 200%;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  z-index: 0;
-}
-
-.group:hover .gradient-border {
-  opacity: 1 !important;
-  animation: border-flow 3s linear infinite;
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 @layer utilities {
   :root {
-    --gradient-border: linear-gradient(135deg, #3b82f6 10%, #8b5cf6 40%, rgb(216, 142, 4) 100%);
+    --gradient-border: linear-gradient(
+      135deg,
+      #3b82f6 10%,
+      #8b5cf6 40%,
+      rgb(216, 142, 4) 100%
+    );
   }
 
-  .border-gradient {
-    border-image: var(--gradient-border);
-    border-image-slice: 1;
-    border-width: 3px;
-    border-style: solid;
-    border-radius: 20px;
+  .background-gradient:hover {
+    background-image: var(--gradient-border);
   }
+}
+
+.border-gradient {
+  border-color: linear-gradient(
+    135deg,
+    #3b82f6 10%,
+    #8b5cf6 40%,
+    rgb(216, 142, 4) 100%
+  );
+  border-width: 2px;
+  border-radius: 20px;
 }
 
 .animate-fade-in-top {
@@ -102,8 +108,13 @@ body {
   animation: typing-cursor 1s infinite;
 }
 @keyframes typing-cursor {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
 
 :root {

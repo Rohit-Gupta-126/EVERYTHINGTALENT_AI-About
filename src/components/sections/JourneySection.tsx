@@ -68,12 +68,16 @@ export default function JourneySection() {
             where every step brings us closer to transforming the future.
           </p>
 
-          <RainbowButton className="hover:scale-[1.035] transform transition-transform">
-            <span className="flex items-center gap-2 text-white dark:text-black">
-              Subscribe to Updates
-              <GrMail className="w-4 h-4 text-white dark:text-black" />
-            </span>
-          </RainbowButton>
+          <a className="hover:scale-[1.02] transition-transform" href="#">
+            <div className="rounded-lg background-gradient p-[3px]">
+              <RainbowButton>
+                <span className="flex items-center gap-2 text-white dark:text-black">
+                  Subscribe to Updates
+                  <GrMail className="w-4 h-4 text-white dark:text-black" />
+                </span>
+              </RainbowButton>
+            </div>
+          </a>
         </div>
 
         <div className="mt-12 md:mt-16 lg:mt-24 space-y-12 md:space-y-16 lg:space-y-24">
