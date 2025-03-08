@@ -48,7 +48,7 @@ export default function HeroSection() {
             </div>
 
             {/* Right Image */}
-            <div className="relative h-[300px] md:h-[400px] lg:h-[520px] w-full max-w-[90%] lg:max-w-[520px] flex justify-center items-center animate-fade-in-top">
+            <div className="relative h-[300px] md:h-[400px] lg:h-[520px] w-full max-w-[90%] lg:max-w-[520px] flex justify-center items-center animate-fade-in-top overflow-hidden">
               <div className="absolute -right-16 md:-right-24 -top-16 h-[200px] w-[380px] md:h-[500px] md:w-[680px] rounded-full bg-blue-500/20 blur-3xl" />
               <div className="relative w-full h-full p-[5px] rounded-2xl bg-gradient-to-tr from-blue-400 via-purple-500 to-yellow-400 transition-transform hover:scale-[1.01]">
                 <div className="relative w-full h-full rounded-[12px] overflow-hidden border-2 border-white/10">
